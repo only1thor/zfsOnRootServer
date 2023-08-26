@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  # configuration in this file only applies to exampleHost host.
+  # configuration in this file only applies to zfsOnRootServer host.
   programs.tmux = {
     enable = true;
     newSession = true;

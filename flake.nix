@@ -61,7 +61,7 @@
           }));
     in {
       nixosConfigurations = {
-        exampleHost = mkHost "exampleHost" "x86_64-linux";
+        zfsOnRootServer = mkHost "zfsOnRootServer" "x86_64-linux";
       };
     };
 }
