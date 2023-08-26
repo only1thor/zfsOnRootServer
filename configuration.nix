@@ -49,7 +49,7 @@
     xkbVariant = "dvorak";
     xkbOptions = "grp:win_space_toggle";
   };
-  i18n.consoleUseXkbConfig = true;
+  console.useXkbConfig = true;
 
   boot.zfs.forceImportRoot = false;
 
