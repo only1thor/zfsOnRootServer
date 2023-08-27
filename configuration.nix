@@ -51,7 +51,7 @@
 
   # Sanoid Templates
   services.sanoid.templates.template_backup = {
-    frequently = 0;
+    frequently = 4;
     hourly = 48;
     daily = 30;
     monthly = 3;
