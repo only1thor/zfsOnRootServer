@@ -42,6 +42,7 @@
   # Sanoid service
   services.sanoid = {
     enable = true;
+    interval = "hourly";
     datasets."rpool/backup/test" = {
       useTemplate = ["template_backup"];
       recursive = true;
