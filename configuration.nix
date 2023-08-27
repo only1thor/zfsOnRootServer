@@ -38,7 +38,27 @@
   };
 
   services.tailscale.enable = true;
-  
+
+  # Sanoid service
+  services.sanoid = {
+    enable = true;
+    datasets."rpool/backup/test" = {
+      useTemplate = ["template_backup"];
+      recursive = true;
+    };
+  };
+
+  # Sanoid Templates
+  services.sanoid.templates.template_backup = {
+    frequently = 0;
+    hourly = 48;
+    daily = 30;
+    monthly = 3;
+    yearly = 0;
+    autosnap = false;
+    autoprune = true;
+};
+
   services.openssh = {
     enable = true;
     settings = { PasswordAuthentication = false; };
