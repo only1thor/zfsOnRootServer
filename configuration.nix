@@ -47,6 +47,10 @@
       useTemplate = ["template_backup"];
       recursive = true;
     };
+    datasets."rpool/backup/BorgBackedup" = {
+      useTemplate = ["template_backup"];
+      recursive = true;
+    };
   };
 
   # Sanoid Templates
