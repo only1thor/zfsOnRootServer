@@ -79,6 +79,7 @@
   console.useXkbConfig = true;
 
   boot.zfs.forceImportRoot = false;
+  boot.zfs.requestEncryptionCredentials = false;  
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
